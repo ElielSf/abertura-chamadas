@@ -1,0 +1,15 @@
+.Header {
+    height: 15vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Header, .Header__title {
+    font-size: 3rem;
+
+    color: #F7F5E6;
+    background-color: #52658F;
+}

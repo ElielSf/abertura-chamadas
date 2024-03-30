@@ -1,0 +1,98 @@
+.Calls {
+    height: 85vh;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 3fr 6fr;
+    grid-template-areas: 
+    'create list';
+}
+
+.Calls__create {
+    grid-area: create;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.Calls__title {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.Calls__topic {
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.Calls__input {
+    width: 75%;
+    height: 5%;
+
+    padding-left: 2px;
+    font-size: medium;
+    background-color: #E8E8E8;
+    box-shadow: 3px 4px 1px #52658F;
+}
+
+.Calls__button {
+    width: 70%;
+    height: 10%;
+
+    font-size: larger;
+    font-weight: 600;
+    margin-top: 50px;
+    background-color: #00fff2;
+    box-shadow: 5px 5px 1px #0091aa;
+}
+
+.Calls__button, .Calls__input {
+    border: none;
+    border-radius: 10px;
+}
+
+.Calls__create, .Calls__title, .Calls__topic {
+    background-color: #333A56;
+    color: #F7F5E6;
+}
+
+.Calls__list {
+    grid-area: list;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.Calls__listItem {
+    width: 25%;
+    height: 20%;
+    margin: 20px;
+    font-size: large;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+
+    border-radius: 10px;    
+}
+
+.Calls--text, .Calls__listItem {
+    background-color: #F7F5E6;
+}
+
+.Calls__exception {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Calls--errorTitle {
+    font-size: xx-large;
+    color: #F7F5E6;
+}

@@ -1,15 +1,12 @@
-import { useState } from 'react'
-import Chamadas from './components/Chamadas.jsx'
+import Calls from './components/Calls.jsx'
+import Header from './components/Header.jsx'
 import './css/App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <div>
-      <Chamadas />
+    <div className='App'>
+      <header><Header /></header>
+      <main><Calls /></main>
     </div>
   )
 }
-
-export default App
